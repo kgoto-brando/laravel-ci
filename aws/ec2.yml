@@ -31,8 +31,7 @@ Resources:
     Properties:
       CidrBlock: !Ref VpcCidrBlock
       Tags:
-        -
-          Key: Name
+        - Key: Name
           Value: !Ref AWS::StackName
   PublicSubnet:
     Type: AWS::EC2::Subnet
